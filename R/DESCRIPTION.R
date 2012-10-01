@@ -1,0 +1,11 @@
+Package: berrylogo
+Type: Package
+Title: A seqLogo alternative
+Version: 0.1
+Author: Jeremy Leipzig <leipzig@gmail.com>
+  Maintainer: Jeremy Leipzig <leipzig@gmail.com>
+  Description: A berryLogo is a seqLogo alternative developed by Charles C. Berry for "Selection of Target Sites for Mobile DNA Integration in the Human Genome"
+               http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696. Instead of “information content”, the y-axis is the log relative frequency with respect to the background frequency, generated here from the gc_content parameter.
+Imports: plyr,ggplot2,reshape2
+Depends: R (>= 2.15.0)
+License: GPL-2
