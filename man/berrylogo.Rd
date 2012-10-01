@@ -7,9 +7,13 @@
 \arguments{
   \item{pwm}{matrix of fractional nucleotide frequencies
   0.00-1.00 here rows are A, C, G, T and columns are
-  position gc_content the GC content of the source genome
-  zero a placeholder estimate for true frequency when 0 is
-  observed}
+  position}
+
+  \item{gc_content}{optional the GC content of the source
+  genome}
+
+  \item{zero}{optional a placeholder estimate for true
+  frequency when 0 is observed}
 }
 \value{
   A ggplot2 object, use print() to display
