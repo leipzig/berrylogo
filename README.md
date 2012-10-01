@@ -1,8 +1,8 @@
-# berryLogo: a better seqLogo
+# berrylogo: a better sequence logo
 
 ## Description
 
-A berryLogo is a seqLogo alternative developed by [Charles C.
+A berrylogo is a sequence logo alternative developed by [Charles C.
 Berry](http://famprevmed.ucsd.edu/faculty/cberry) for "Selection of
 Target Sites for Mobile DNA Integration in the Human Genome"
 [[http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696/)
