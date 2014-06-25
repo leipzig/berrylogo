@@ -12,6 +12,7 @@ frequency with respect to the background frequency, generated here from
 the gc\_content parameter.
 
 ## Usage
+    library("devtools")
     install_github("berrylogo","leipzig")
     library("berrylogo")
     freqs<-matrix(data=c(0.25,0.65,0.87,0.92,0.16,0.16,0.04,0.98,0.98,1.00,0.02,0.10,0.10,0.80,0.98,0.91,0.07,0.07,
