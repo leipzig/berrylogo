@@ -21,8 +21,8 @@ berrylogo<-function(pwm,gc_content=.41,zero=.0001){
   bval<-plyr::laply(names(backFreq),function(x){log(pwm[x,])-log(backFreq[[x]])})
   row.names(bval)<-names(backFreq)
   p<-ggplot2::ggplot(reshape2::melt(bval,varnames=c("nt","pos")),ggplot2::aes(x=pos,y=value,label=nt))+
-    ggplot2::geom_abline(ggplot2::aes(slope=0), colour = "grey",size=2)+
-    ggplot2::geom_text(ggplot2::aes(colour=factor(nt)),size=8)+
+    ggplot2::geom_hline(yintercept=0, colour = "grey",size=2)+
+    ggplot2::geom_text(ggplot2::aes(colour=factor(nt)),size=8,fontface = "bold")+
     ggplot2::theme(legend.position="none")+
     ggplot2::scale_x_continuous(name="Position",breaks=1:ncol(bval))+
     ggplot2::scale_y_continuous(name="Log relative frequency")
