@@ -1,5 +1,7 @@
 # berrylogo: a better sequence logo
 
+[![Build Status](https://travis-ci.org/leipzig/berrylogo.svg?branch=master)](https://travis-ci.org/leipzig/berrylogo)
+
 ## Description
 
 A berrylogo is a sequence logo alternative developed by [Charles C.
