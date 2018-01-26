@@ -5,7 +5,7 @@
 ## Description
 
 A berrylogo is a sequence logo alternative developed by [Charles C.
-Berry](http://famprevmed.ucsd.edu/faculty/cberry) for "Selection of
+Berry](http://profiles.ucsd.edu/charles.berry) for "Selection of
 Target Sites for Mobile DNA Integration in the Human Genome"
 [[http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1664696/)
 
