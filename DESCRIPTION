@@ -1,7 +1,7 @@
 Package: berrylogo
 Type: Package
 Title: A seqLogo alternative
-Version: 0.1
+Version: 0.2
 Author: Jeremy Leipzig <leipzig@gmail.com>
 Maintainer: Jeremy Leipzig <leipzig@gmail.com>
 Description: A berryLogo is a seqLogo alternative developed by Charles C. Berry
@@ -19,3 +19,4 @@ Depends:
 License: GPL-2
 Collate:
     'berrylogo.r'
+RoxygenNote: 6.0.1
