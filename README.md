@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/leipzig/berrylogo.svg?branch=master)](https://travis-ci.org/leipzig/berrylogo)
 [![codecov](https://codecov.io/gh/leipzig/berrylogo/branch/master/graph/badge.svg)](https://codecov.io/gh/leipzig/berrylogo)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/berrylogo)](http://www.r-pkg.org/pkg/berrylogo)
+[![DOI](https://zenodo.org/badge/2393875.svg)](https://zenodo.org/badge/latestdoi/2393875)
 
 ## Description
 
