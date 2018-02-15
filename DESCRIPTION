@@ -16,8 +16,9 @@ Imports:
     reshape2,
     methods
 Suggests:
-    TFBSTools,
     testthat
+Enhances:
+    TFBSTools
 Depends:
     R (>= 2.15.0)
 License: GPL-2 | file LICENSE
