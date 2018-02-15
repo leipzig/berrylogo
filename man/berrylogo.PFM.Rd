@@ -11,11 +11,7 @@ berrylogo.PFM(pwm, ...)
 \item{pwm}{matrix of fractional nucleotide counts
 here rows are A, C, G, T and columns are position}
 
-\item{gc_content}{optional the GC content of the source genome}
-
-\item{zero}{optional a placeholder estimate for true frequency when 0 is observed}
-
-\item{base}{the log base to use}
+\item{...}{additional arguments}
 }
 \description{
 Generates a Berry logo in ggplot from a TFBSTools

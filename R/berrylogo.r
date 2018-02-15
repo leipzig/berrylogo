@@ -10,10 +10,10 @@ berrylogo <- function(x,...) {
   if (is(x, "PWMatrix")){
     #TFBSTools uses the same class name regardless of the frequency units
     #but PWM have the pseudocounts
-    if("pseudocounts" %in% slotNames(x)){return(berrylogo.PWM(x))}
+    if("pseudocounts" %in% methods::slotNames(x)){return(berrylogo.PWM(x))}
     return(berrylogo.PFM(x,...))
   }
-  if (is(x, "matrix")){return(berrylogo.matrix(x,...))}
+  if (methods::is(x, "matrix")){return(berrylogo.matrix(x,...))}
 }
 
 ##' Generates a Berry logo in ggplot from a positional weight matrix
@@ -79,15 +79,13 @@ berrylogo.PWM<-function(pwm){
 ##' Positional Frequency Matrix, which is count based
 ##' @param pwm matrix of fractional nucleotide counts
 ##'    here rows are A, C, G, T and columns are position
-##' @param gc_content optional the GC content of the source genome    
-##' @param zero optional a placeholder estimate for true frequency when 0 is observed
-##' @param base the log base to use
-berrylogo.PFM<-function(pwm,...){
+##' @param ... additional arguments
+berrylogo.PFM<-function(pfm,...){
   pwm<-pfm@profileMatrix/colSums(pfm@profileMatrix)
   return(berrylogo.matrix(pwm,...))
 }
 
-ggberry<-function(ylab){
+ggberry<-function(bval,ylab){
   p<-ggplot2::ggplot(reshape2::melt(bval,varnames = c("nt","pos")),
                      ggplot2::aes_string(x = 'pos', y = 'value',label = 'nt'))+
     ggplot2::geom_hline(yintercept = 0, colour = "grey",size = 2)+

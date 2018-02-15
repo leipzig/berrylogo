@@ -13,7 +13,8 @@ Description: A berryLogo is a seqLogo alternative developed by Charles C. Berry
 Imports:
     plyr,
     ggplot2,
-    reshape2
+    reshape2,
+    methods
 Suggests:
     TFBSTools,
     testthat
