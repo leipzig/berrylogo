@@ -54,7 +54,7 @@ berrylogo.matrix<-function(pwm,gc_content = .41,zero = .0001, base = exp(1)){
 ##' @return A ggplot2 object, use print() to display
 ##' 
 ##' @export
-##' @importFrom TFBSTools PFMatrix
+##' @importFrom TFBSTools PFMatrix toPWM
 ##' @examples
 ##' pfm <- TFBSTools::PFMatrix(ID="MA0004.1", name="Arnt", matrixClass="Zipper-Type", 
 ##'   strand="+", bg=c(A=0.25, C=0.25, G=0.25, T=0.25), 

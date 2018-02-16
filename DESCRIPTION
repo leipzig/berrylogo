@@ -14,11 +14,11 @@ Imports:
     plyr,
     ggplot2,
     reshape2,
-    methods
+    methods,
+    TFBSTools
 BiocViews: MotifAnnotation
 Suggests:
-    testthat,
-    TFBSTools
+    testthat
 Depends:
     R (>= 2.15.0)
 License: GPL-2 | file LICENSE
