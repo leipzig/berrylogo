@@ -77,7 +77,7 @@ berrylogo.PWM<-function(pwm){
 
 ##' Generates a Berry logo in ggplot from a TFBSTools
 ##' Positional Frequency Matrix, which is count based
-##' @param pwm matrix of fractional nucleotide counts
+##' @param pfm matrix of fractional nucleotide counts
 ##'    here rows are A, C, G, T and columns are position
 ##' @param ... additional arguments
 berrylogo.PFM<-function(pfm,...){
@@ -85,6 +85,11 @@ berrylogo.PFM<-function(pfm,...){
   return(berrylogo.matrix(pwm,...))
 }
 
+##' Generates a Berry logo in ggplot from a
+##' log transformed matrix
+##' @param bval matrix of log-tx freqs
+##'    here rows are A, C, G, T and columns are position
+##' @param ylab the y-axis label
 ggberry<-function(bval,ylab){
   p<-ggplot2::ggplot(reshape2::melt(bval,varnames = c("nt","pos")),
                      ggplot2::aes_string(x = 'pos', y = 'value',label = 'nt'))+

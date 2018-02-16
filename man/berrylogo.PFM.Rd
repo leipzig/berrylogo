@@ -8,10 +8,10 @@ Positional Frequency Matrix, which is count based}
 berrylogo.PFM(pfm, ...)
 }
 \arguments{
-\item{...}{additional arguments}
-
-\item{pwm}{matrix of fractional nucleotide counts
+\item{pfm}{matrix of fractional nucleotide counts
 here rows are A, C, G, T and columns are position}
+
+\item{...}{additional arguments}
 }
 \description{
 Generates a Berry logo in ggplot from a TFBSTools
