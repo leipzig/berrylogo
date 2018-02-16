@@ -3,5 +3,3 @@
 export(berrylogo)
 export(berrylogo.PWM)
 export(berrylogo.matrix)
-importFrom(TFBSTools,PFMatrix)
-importFrom(TFBSTools,toPWM)
