@@ -21,8 +21,8 @@ berrylogo <- function(x,...) {
 ##' @param pwm matrix of fractional nucleotide frequencies 0.00-1.00
 ##'    here rows are A, C, G, T and columns are position
 ##' @param gc_content optional the GC content of the source genome    
-##' @param zero optional a placeholder estimate for true frequency when 0 is observed
-##' @param base the log base to use
+##' @param zero optional a pseudocount placeholder estimate for true frequency when 0 is observed
+##' @param base the log base to use, exp(1) by default
 ##' @return A ggplot2 object, use print() to display
 ##' 
 ##' @export
@@ -54,23 +54,6 @@ berrylogo.matrix<-function(pwm,gc_content = .41,zero = .0001, base = exp(1)){
 ##' @return A ggplot2 object, use print() to display
 ##' 
 ##' @export
-##' @importFrom TFBSTools PFMatrix toPWM
-##' @examples
-##' pfm <- TFBSTools::PFMatrix(ID="MA0004.1", name="Arnt", matrixClass="Zipper-Type", 
-##'   strand="+", bg=c(A=0.25, C=0.25, G=0.25, T=0.25), 
-##'   tags=list(family="Helix-Loop-Helix", species="10090", 
-##'     tax_group="vertebrates",
-##'     medline="7592839", type="SELEX", ACC="P53762", 
-##'     pazar_tf_id="TF0000003",
-##'     TFBSshape_ID="11", TFencyclopedia_ID="580"),
-##'     profileMatrix=matrix(c(4L,  19L, 0L,  0L,  0L,  0L,
-##'                         16L, 0L,  20L, 0L,  0L,  0L,
-##'                         0L,  1L,  0L,  20L, 0L,  20L,
-##'                         0L,  0L,  0L,  0L,  20L, 0L), 
-##'                      byrow=TRUE, nrow=4, 
-##'                      dimnames=list(c("A", "C", "G", "T")))
-##' )
-##' pwm <- TFBSTools::toPWM(pfm, type="log2probratio", pseudocounts=0.8)
 berrylogo.PWM<-function(pwm){
   return(ggberry(pwm@profileMatrix,ylab="Log2 relative frequency"))
 }

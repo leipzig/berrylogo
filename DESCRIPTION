@@ -14,8 +14,7 @@ Imports:
     plyr,
     ggplot2,
     reshape2,
-    methods,
-    TFBSTools
+    methods
 BiocViews: MotifAnnotation
 Suggests:
     testthat
