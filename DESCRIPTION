@@ -15,7 +15,7 @@ Imports:
     ggplot2,
     reshape2,
     methods
-BiocViews:
+BiocViews: MotifAnnotation
 Suggests:
     testthat,
     TFBSTools
